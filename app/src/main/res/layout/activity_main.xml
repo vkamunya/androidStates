@@ -17,20 +17,15 @@
         android:id="@+id/save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/save"/>
+        android:text="Save"/>
 
     <Button
         android:id="@+id/retrieve"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/retrieve"
+        android:text="Retrieve"
 
         />
-    <Button
-        android:id="@+id/copy"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        />
+
 
 </LinearLayout>

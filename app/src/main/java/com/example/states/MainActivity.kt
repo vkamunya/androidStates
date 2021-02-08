@@ -9,7 +9,7 @@ import com.example.states.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding:ActivityMainBinding
 
    lateinit var data: SharedPreferences
    lateinit var editdata:SharedPreferences.Editor
@@ -36,31 +36,31 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        Toast.makeText(applicationContext,"onCreate",Toast.LENGTH_SHORT).show()
+        Toast.makeText(applicationContext,"onStart",Toast.LENGTH_SHORT).show()
     }
 
     override fun onResume() {
         super.onResume()
         //retrieving data
         retrieveData()
-        Toast.makeText(applicationContext,"onCreate",Toast.LENGTH_SHORT).show()
+        Toast.makeText(applicationContext,"onResume",Toast.LENGTH_SHORT).show()
     }
 
     override fun onPause() {
         super.onPause()
         //save
         saveData()
-        Toast.makeText(applicationContext,"onCreate",Toast.LENGTH_SHORT).show()
+        Toast.makeText(applicationContext,"onPause",Toast.LENGTH_SHORT).show()
     }
 
     override fun onStop() {
         super.onStop()
-        Toast.makeText(applicationContext,"onCreate",Toast.LENGTH_SHORT).show()
+        Toast.makeText(applicationContext,"onStop",Toast.LENGTH_SHORT).show()
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Toast.makeText(applicationContext,"onCreate",Toast.LENGTH_SHORT).show()
+        Toast.makeText(applicationContext,"onDestroy",Toast.LENGTH_SHORT).show()
     }
     fun saveData(){
         editdata=data.edit()
